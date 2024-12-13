@@ -1,5 +1,4 @@
-# ConKD-Lion-Contrastive-Knowledge-Distillation-with-Logit-Standardization-and-Lion-Optimizer
-
+# ConKD-Lion: Contrastive Knowledge Distillation with Logit Standardization and Lion Optimizer
 
 ## Overview
 This project implements a approach to **Knowledge Distillation (KD)** by mixing:
@@ -100,15 +99,11 @@ Where:
 ---
 
 ## Installation
-  Environments:
-  
-    Python 3.12.3
-    PyTorch 2.3.1
-
 Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/yourusername/ConKD-Lion.git
 cd ConKD-Lion
+pip install -r requirements.txt
 ```
 
 ---
@@ -143,6 +138,21 @@ cd ConKD-Lion
   - [Supervised Contrastive Learning Paper (NeurIPS 2020)](https://arxiv.org/abs/2004.11362)
   - [SupContrast GitHub Repository](https://github.com/HobbitLong/SupContrast/tree/master)
 - **Lion Optimizer**: [GitHub Repository for Lion Optimizer](https://github.com/google/automl/tree/master/lion)
+
+---
+## Results
+
+### Teacher Model (ResNet-101)
+- **Dataset**: Imagenette
+- **Accuracy**: 97% on the test set.
+- **Training Loss Curve**:
+  - ![resnet101-teacher](resnet101-teacher_output.png)
+
+### Student Model (ResNet-18)
+- **Dataset**: Imagenette
+- **Accuracy**: 92% on the test set.
+- **Training Loss Curve**:
+  - ![resnet101-18-teacher-student](resnet101-18-teacher-student_output.png)
 
 
 ---
