@@ -1,5 +1,5 @@
 # ConKD-Lion-Contrastive-Knowledge-Distillation-with-Logit-Standardization-and-Lion-Optimizer
-# ConKD-Lion: Contrastive Knowledge Distillation with Logit Standardization and Lion Optimizer
+
 
 ## Overview
 This project implements a approach to **Knowledge Distillation (KD)** by mixing:
