@@ -102,8 +102,8 @@ Where:
 ## Installation
   Environments:
   
-    Python 3.8
-    PyTorch 1.7.0
+    Python 3.12.3
+    PyTorch 2.3.1
 
 Clone the repository and install dependencies:
 ```bash
