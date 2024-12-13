@@ -109,7 +109,6 @@ Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/yourusername/ConKD-Lion.git
 cd ConKD-Lion
-pip install -r requirements.txt
 ```
 
 ---
