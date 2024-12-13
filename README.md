@@ -100,6 +100,11 @@ Where:
 ---
 
 ## Installation
+  Environments:
+  
+    Python 3.8
+    PyTorch 1.7.0
+
 Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/yourusername/ConKD-Lion.git
