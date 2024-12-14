@@ -6,12 +6,12 @@ This project implements a approach to **Knowledge Distillation (KD)** by mixing:
 - **Logit Standardization**: Normalizes logits for improved training stability and performance.
 - **Lion Optimizer**: A memory-efficient, fast optimizer for large-scale machine learning tasks.
 
-The framework aims to improve the transfer of knowledge from a **ResNet-50 teacher model** to a **ResNet-18 student model**, achieving high performance on the **Imagenette dataset** with reduced complexity.
+The framework aims to improve the transfer of knowledge from a **ResNet-101 teacher model** to a **ResNet-18 student model**, achieving high performance on the **Imagenette dataset** with reduced complexity.
 
 ---
 
 ## Features
-- **Knowledge Distillation**: Transfers knowledge from a larger pre-trained teacher model (ResNet-50) to a smaller student model (ResNet-18).
+- **Knowledge Distillation**: Transfers knowledge from a larger pre-trained teacher model (ResNet-101) to a smaller student model (ResNet-18).
 - **Contrastive Supervised Loss**: Ensures alignment of student predictions with real ground truth labels.
 - **Logit Standardization Loss**: Derived from the CVPR 2024 paper *Logit Standardization in Knowledge Distillation*, this loss stabilizes training by normalizing logits.
 - **Lion Optimizer**: Speeds up convergence and improves generalization.
@@ -32,7 +32,7 @@ This project utilizes the **Imagenette dataset**, a subset of ImageNet, designed
 
 ### Teacher and Student Models
 This project uses pre-trained ResNet models:
-- **Teacher Model**: ResNet-50, a deep and expressive model.
+- **Teacher Model**: ResNet-101, a deep and expressive model.
 - **Student Model**: ResNet-18, a smaller and efficient architecture.
 
 ### Logit Standardization Loss
@@ -92,7 +92,7 @@ Where:
 
 ### Training Process
 1. **Teacher Model**:
-   - Pre-trained ResNet-50 generates the logits and feature embeddings.
+   - Pre-trained ResNet-101 generates the logits and feature embeddings.
 2. **Student Model**:
    - ResNet-18 learns using the combined loss, supervised by the teacher and ground truth labels.
 
@@ -129,7 +129,7 @@ pip install -r requirements.txt
 
 ## Resources
 - **Dataset**: [Imagenette on GitHub](https://github.com/fastai/imagenette)
-- **Teacher Model**: [ResNet-50](https://pytorch.org/vision/stable/models.html#id10)
+- **Teacher Model**: [ResNet-101](https://pytorch.org/vision/stable/models.html#id10)
 - **Student Model**: [ResNet-18](https://pytorch.org/vision/stable/models.html#id12)
 - **Logit Standardization**:
   - [Logit Standardization in Knowledge Distillation (CVPR 2024)](https://openaccess.thecvf.com/content/CVPR2024/papers/Sun_Logit_Standardization_in_Knowledge_Distillation_CVPR_2024_paper.pdf)
