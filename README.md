@@ -1,7 +1,7 @@
 # ConKD-Lion: Contrastive Knowledge Distillation with Logit Standardization and Lion Optimizer
 
 ## Overview
-This project implements a approach to **Knowledge Distillation (KD)** by mixing:
+This project implements an approach to **Knowledge Distillation (KD)** by mixing:
 - **Contrastive Learning Loss**: Enhances alignment between teacher and student representations.
 - **Logit Standardization**: Normalizes logits for improved training stability and performance.
 - **Lion Optimizer**: A memory-efficient, fast optimizer for large-scale machine learning tasks.
